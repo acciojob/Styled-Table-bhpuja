@@ -2,14 +2,113 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Game Stats Table</title>
+    <style>
+        /* General table styles */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header row styles */
+        thead {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        thead th {
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Table body row styles */
+        tbody tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #e6f7ff;
+        }
+
+        tbody td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        /* Hover effect for rows */
+        tbody tr:hover {
+            background-color: #d1f7c4;
+        }
+
+        /* Table title */
+        caption {
+            font-size: 1.5em;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        /* Border styling */
+        th, td {
+            border: 1px solid #ddd;
+        }
+    </style>
 </head>
 <body>
-    <!-- add table here -->
 
-        
+    <!-- Table for Game Stats -->
+    <table>
+        <caption>Game Statistics</caption>
+        <thead>
+            <tr>
+                <th>Player</th>
+                <th>Games Played</th>
+                <th>Wins</th>
+                <th>Losses</th>
+                <th>Win Rate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>50</td>
+                <td>30</td>
+                <td>20</td>
+                <td>60%</td>
+            </tr>
+            <tr>
+                <td>Alice Smith</td>
+                <td>60</td>
+                <td>45</td>
+                <td>15</td>
+                <td>75%</td>
+            </tr>
+            <tr>
+                <td>Bob Johnson</td>
+                <td>40</td>
+                <td>20</td>
+                <td>20</td>
+                <td>50%</td>
+            </tr>
+            <tr>
+                <td>Eva Brown</td>
+                <td>55</td>
+                <td>40</td>
+                <td>15</td>
+                <td>73%</td>
+            </tr>
+            <tr>
+                <td>Mike Green</td>
+                <td>30</td>
+                <td>10</td>
+                <td>20</td>
+                <td>33%</td>
+            </tr>
+        </tbody>
+    </table>
+
 </body>
 </html>
